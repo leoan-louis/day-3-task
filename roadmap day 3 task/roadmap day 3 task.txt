@@ -1,0 +1,19 @@
+1)how to compare two JASON have the same properties. 
+                 a. let obj 1={name:"person 1",age 5};
+                 b. let obj 2={age:5,name:"person 1";} 
+
+
+
+let obj1 = {name: "person 1", age: 5};
+let obj2 = {age: 5, name: "person 1"};
+
+// Convert objects to JSON strings
+let json1 = JSON.stringify(obj1);
+let json2 = JSON.stringify(obj2);
+
+// Compare the JSON strings
+if (json1 === json2) {
+    console.log("The JSON objects are equal.");
+} else {
+    console.log("The JSON objects are not equal.");
+}
